@@ -1,0 +1,148 @@
+.moon,
+.cloud {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.moon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: moveUpDown 5s infinite ease-in-out;
+}
+
+.moon {
+  background: radial-gradient(circle, #ffffff, #b3b3b3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moveLeftRight 10s infinite linear;
+}
+
+.cloud_part {
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 0 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translate(-50%, -20%);
+  }
+  50% {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.clouds .animated-icon {
+  width: 200px;
+  height: 100px;
+  background: gray;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float 10s infinite ease-in-out;
+}
+
+.sun {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, yellow, orange);
+  box-shadow: 0 0 60px 30px rgba(255, 223, 0, 0.5),
+    0 0 100px 50px rgba(255, 223, 0, 0.7);
+  /* animation: shine 2s infinite ease-in-out, moveUpDown 5s infinite ease-in-out; */
+  animation: pulse 5s infinite ease-in-out, rotate 20s infinite linear;
+}
+
+@media (max-width: 768px) {
+  .sun {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes shine {
+  0%,
+  100% {
+    box-shadow: 0 0 60px 30px rgba(255, 223, 0, 0.5),
+      0 0 100px 50px rgba(255, 223, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 80px 40px rgba(255, 223, 0, 0.8),
+      0 0 120px 60px rgba(255, 223, 0, 1);
+  }
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translate(-50%, -20%);
+  }
+  50% {
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Rotate animation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Float animation (sunrise-sunset style) */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

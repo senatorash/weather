@@ -1,0 +1,13 @@
+.hero_image {
+  background-image: url("../Assets/thunderstorm-village.jpg"),
+    linear-gradient(177deg, rgba(6, 49, 66, 1) 0%, rgba(15, 12, 12, 1) 100%);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set the height to fill the viewport */
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  margin-top: -100px;
+  /* background: rgb(6,49,66);
+background: ; */
+}
