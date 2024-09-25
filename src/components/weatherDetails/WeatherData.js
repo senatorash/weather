@@ -57,7 +57,7 @@ const WeatherData = () => {
 
         <div
           className={`col-lg-4 col-12 ${classes.weather_section}`}
-          style={{ marginTop: "-50px" }}
+          // style={{ marginTop: "-50px" }}
         >
           <WeatherForm
             onSearch={onGetWeatherData}
