@@ -15,7 +15,12 @@ const WeatherDisplay = ({ weatherData }) => {
 
   return (
     <>
-      <FontAwesomeIcon icon={icon} size="6x" style={{ color }} />
+      <FontAwesomeIcon
+        className="mt-sm-5"
+        icon={icon}
+        size="6x"
+        style={{ color }}
+      />
       <div className={`row top-sm-0 ${classes.weather_display} `}>
         {/* <img src={iconUrl} /> */}
         {/* <div className="col-lg-2 "></div> */}
