@@ -19,7 +19,7 @@ const WeatherDisplay = ({ weatherData }) => {
         className="mt-sm-5"
         icon={icon}
         size="6x"
-        style={{ color }}
+        style={{ color, marginTop: "50px" }}
       />
       <div className={`row top-sm-0 ${classes.weather_display} `}>
         {/* <img src={iconUrl} /> */}
