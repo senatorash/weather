@@ -61,9 +61,6 @@ button:active {
   .weather_display {
     top: 100px;
   }
-  .weather_section {
-    margin-top: -150px !important;
-  }
 }
 
 @keyframes slideInText {
