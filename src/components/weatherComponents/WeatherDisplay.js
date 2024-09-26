@@ -10,7 +10,7 @@ const WeatherDisplay = ({ weatherData }) => {
   const highTemp = Math.floor(weatherData.main.temp_max);
   const lowTemp = Math.floor(weatherData.main.temp_min);
   const currentTimeUTC = weatherData.dt * 1000;
-  const timezoneOffset = weatherData.timezone * 1000;
+  const timezoneOffset = (weatherData.timezone - 3600) * 1000;
 
   const currentLocalTime = new Date(currentTimeUTC + timezoneOffset);
 

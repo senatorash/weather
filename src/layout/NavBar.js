@@ -1,5 +1,4 @@
-import { NavLink } from "react-router-dom";
-import classes from "../components/weatherDetails/Weather.module.css";
+import classes from "../components/weatherComponents/Weather.module.css";
 
 const NavBar = () => {
   return (

@@ -9,7 +9,7 @@ body {
   /* font-family: "Poppins", sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/src/Assets/thunderstorm-village.jpg"),
+  background-image: url("/src/Assets/beautiful-cloudscape.jpg"),
     linear-gradient(177deg, rgba(6, 49, 66, 1) 0%, rgba(15, 12, 12, 1) 100%);
   background-size: contain;
   background-position: center;
