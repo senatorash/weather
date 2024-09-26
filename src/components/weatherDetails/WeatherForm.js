@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ErrorComponent from "../../commons/ErrorComponent";
+import classes from "./Weather.module.css";
 
 const WeatherForm = ({ onSearch, isError, errorMessage }) => {
   const [city, setCity] = useState("");
@@ -32,7 +33,7 @@ const WeatherForm = ({ onSearch, isError, errorMessage }) => {
 
       <div>
         <input
-          className="form-control btn btn-secondary"
+          className={`form-control ${classes.btn}`}
           type="submit"
           disabled={isLoading}
           value={isLoading ? "Please Wait..." : "Get Weather"}
