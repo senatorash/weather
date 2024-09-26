@@ -23,7 +23,7 @@ const WeatherDisplay = ({ weatherData }) => {
         className="mt-sm-5"
         icon={icon}
         size="6x"
-        style={{ color, marginTop: "20px" }}
+        style={{ color, marginTop: "20px", marginLeft: "30px" }}
       />
       <div className={`row top-sm-0 ${classes.weather_display} `}>
         {/* <img src={iconUrl} /> */}
@@ -37,7 +37,7 @@ const WeatherDisplay = ({ weatherData }) => {
         </div>
 
         <div
-          className={`col-lg-4 col-md-4 col-sm-4 col-4 text-sm-end ${classes.weather_name}`}
+          className={`col-lg-4 col-md-4 col-sm-4 col-4 text-sm-end pl-sm-5 ${classes.weather_name}`}
         >
           <h3 style={{ fontSize: "25px" }}> {weatherData.name}</h3>
           <p>High {highTemp}°</p>
