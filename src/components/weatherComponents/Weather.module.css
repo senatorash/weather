@@ -59,11 +59,11 @@ button:active {
   color: #fff !important;
 }
 
-.btn:hover {
+/* .btn:hover {
   background-color: #fff !important;
   color: #082231 !important;
   transform: scale(1.1) !important;
-}
+} */
 
 .weather_display {
   color: white;
