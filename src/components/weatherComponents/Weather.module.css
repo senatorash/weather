@@ -49,7 +49,7 @@ button:active {
 }
 
 .btn {
-  width: 80% !important;
+  width: 100% !important;
   font-size: 18px;
   font-weight: 600 !important;
   background-color: #082231 !important;
